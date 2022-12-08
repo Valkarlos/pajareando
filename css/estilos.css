@@ -1,0 +1,112 @@
+html {
+	font-size: 100%;
+}
+body {
+	font-family: 'Caveat', cursive;
+	display: grid;
+	grid-template-rows: repeat(4, auto);	
+	grid-gap: 10px;
+}
+header, nav, footer, article {
+	background-color: rgba(255, 255, 255, .8);
+	color:  #2471a3 ;
+	border-radius: 0px;
+	padding: 20px;
+	font-size: 150%;
+}
+header {
+	margin:30px 10px 0px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+#Principal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+nav {
+	margin:10px 20px 10px 10px;
+	flex-basis: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 250%;
+	justify-content: space-around;
+	}
+section{
+	margin:10px 10px 10px 10px;
+	flex-basis: 80%;
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-gap: 10px;
+	align-items: center;
+}
+article	{
+	margin:0px 10px 0px 10px;
+	display: flex;
+	flex-direction: rows;
+	justify-content: left;
+	align-items: center;
+}
+footer{
+	margin:20px 10px 0px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding: 5px;
+}
+a	{
+	color: #2471a3 ;
+	}
+table	{
+	border= 0;
+	width: 800px;
+}
+.formulario	{
+	margin:10px 20px 10px 10px;
+	background-color: rgba(255, 255, 255, .8);
+	color:  #2471a3 ;
+	border-radius: 0px;
+	padding: 20px;
+	font-size: 150%;
+}
+.contenedor-foto-ficha	{
+	margin:10px 20px 10px 20px;
+	background-color: rgba(255, 255, 255, .8);
+	color:  #2471a3 ;
+	border-radius: 0px;
+	padding: 20px;
+	font-size: 150%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#foto-noticia	{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	z-index: 1;
+	grid-column: 1 / 2;
+}
+#titulo-noticia  {
+	position: relative;
+	padding: 5px;
+	grid-column: 2 / 6;
+	font-size: 150%;
+}
+#texto-noticia 	{
+	position: relative;
+	padding: 5px;
+	grid-column: 1 / 6;
+	font-size: 100%;
+}
+.contenedor-noticias {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-gap: 5px;
+}
+

@@ -1,0 +1,84 @@
+html {
+	font-size: 100%;
+}
+body {
+	font-family: 'Caveat', cursive;
+}
+header, nav, footer, section {
+	background-color: rgba(255, 255, 255, .8);
+	color:  #2471a3 ;
+	border-radius: 0px;
+	padding: 20px;
+	font-size: 150%;
+}
+header {
+	margin:30px 10px 0px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+nav {
+	margin:10px 20px 10px 10px;
+	flex-basis: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 250%;
+	justify-content: space-around;
+	}
+section	{
+	margin:10px 10px 10px 20px;
+	display: flex;
+	flex-direction: rows;
+	justify-content: space-around;
+}
+footer{
+	margin:20px 10px 10px 10px;
+	display: flex;
+	flex-direction: rows;
+	justify-content: left;
+	align-items: center;
+	padding: 5px;
+}
+a	{
+	color: #2471a3 ;
+	}
+.contenedor {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-template-areas:        
+        "header header header header header"
+        "fotos fotos fotos fotos navegador"
+        "footer footer footer footer footer";
+    grid-gap: 10px;
+}
+header  {grid-area: header;     }
+nav 	{grid-area: navegador;  }
+section {grid-area: fotos;		}
+footer  {grid-area: footer;     }
+.contenedor-fotos-guia {
+	display: grid;
+    grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(2, auto);
+	justify-items: center;
+	align-items: center;
+}
+.titulo-habitats {
+	font-size: 150%;
+	grid-column: 1 / 3;
+    grid-row: 1 ;
+}
+.foto1	{
+	position: relative;
+	width: 300px;
+	height:200px;
+	z-index: 1;
+}
+.contenedor-listas	{
+	display: flex;
+	flex-direction: columns;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 5px;
+}

@@ -1,0 +1,63 @@
+<!-- Declaración del doctype en HTML5 -->
+<!DOCTYPE html>
+<!--Comienzo del contenido de la página HTML. Se indica también el lenguaje utilizado-->
+<html lang="es">
+<head>
+    <!--Los metadatos incluidos dentro del head-->
+	<meta charset="utf-8"/>
+    <meta name="pagina comparte" content="width=device-width, initial-scale=1.0"/>
+	<title>Página Comparte</title>
+	<!--Enlace al archivo Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
+	<!--Enlace el archivo CSS externo-->
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<STYLE>A {text-decoration: none;} </STYLE>  
+<body style="background-image: url(img/fondo.jpg)">
+    <!--Cabecera de página con logo, título y contacto-->
+	<header>
+	<img style="width:100px" src="img/logo.jpg" alt="LOGO" />
+	<h1>PAJAREANDO</h1>
+	<a href="mailto:info@pajareando.org"><h4>Contacto: info@pajareando.org</h4></a>
+	</header>
+	<main id="Principal">
+		<!--Formulario para enviar con los datos del avistamiento-->
+		<!--<main class="formulario">-->
+		<form class="formulario" action="mailto:citas@pajareando.org" method="post">
+			<h3>FORMULARIO DATOS AVISTAMIENTO</h3>
+			<table >
+				<tr>
+					<td><label for="site">Donde estabas:</label></td>
+					<td><input type="texto" id="lugar" name="lugar"></td>
+					<td><label for="date">Cuando fue:</label></td>
+					<td><input type="date" id="fecha" name="fecha"></td>
+				</tr>
+				<tr>
+					<td><label for="bird">Que Aves eran:</label></td>
+					<td><input type="texto" id="ave" name="ave"></td>
+					<td><label for="site">Cuantos vistes:</label></td>
+					<td><input type="texto" id="cantidad" name="cantidad"></td>
+				</tr>
+				<tr>
+					<td><label for="date">Quien eres:</label></td>
+					<td><input type="texto" id="quien" name="quien"></td>
+					<td><input type="submit" value="Enviar"><input name="Limpiar" type="reset"></td>
+				</tr>
+			</table>
+			<h4>¡¡Gracias por tu colaboración!!</h4>
+		</form>
+		<!--Navegador para acceder rápidamente a cualquier documento-->
+		<nav>
+			<a href="index.html">Inicio</a>
+			<a href="citas.html">Citas</a>
+			<a href="guia.html">Guía Rápida</a>
+		</nav>
+	</main>
+  <!--Pie de página con logo-->
+  <footer>
+    <img style="height: 50px; width:50px; margin:0 40px 0 10px" src="img/logo.jpg" alt="LOGO" />
+	<p>Pajareando</p>
+  </footer>
+</body>
+</html>  
